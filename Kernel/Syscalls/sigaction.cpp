@@ -58,7 +58,7 @@ ErrorOr<FlatPtr> Process::sys$sigaction(int signum, Userspace<const sigaction*> 
         return EINVAL;
 
     InterruptDisabler disabler; // FIXME: This should use a narrower lock. Maybe a way to ignore signals temporarily?
-    auto& action = Thread::current()->m_signal_action_data[signum];
+    auto& action = Process::current().m_signal_action_data[signum];
     if (user_old_act) {
         sigaction old_act {};
         old_act.sa_flags = action.flags;
