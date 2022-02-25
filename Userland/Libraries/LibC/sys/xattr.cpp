@@ -60,3 +60,21 @@ ssize_t flistxattr(int, char*, size_t)
     dbgln("FIXME: Implement flistxattr()");
     return 0;
 }
+
+int removexattr(const char*, const char*)
+{
+    dbgln("FIXME: Implement removexattr()");
+    return 0;
+}
+
+int lremovexattr(const char*, const char*)
+{
+    dbgln("FIXME: Implement lremovexattr()");
+    return 0;
+}
+
+int fremovexattr(int, const char*)
+{
+    dbgln("FIXME: Implement fremovexattr()");
+    return 0;
+}

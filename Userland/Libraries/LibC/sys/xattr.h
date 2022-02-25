@@ -22,4 +22,8 @@ ssize_t listxattr(const char* path, char* list, size_t size);
 ssize_t llistxattr(const char* path, char* list, size_t size);
 ssize_t flistxattr(int fd, char* list, size_t size);
 
+int removexattr(const char* path, const char* name);
+int lremovexattr(const char* path, const char* name);
+int fremovexattr(int fd, const char* name);
+
 __END_DECLS

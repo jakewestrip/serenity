@@ -177,8 +177,10 @@ ErrorOr<FlatPtr> Process::sys$mmap(Userspace<const Syscall::SC_mmap_params*> use
     if ((map_fixed || map_fixed_noreplace) && map_randomized)
         return EINVAL;
 
+    /*
     if (!validate_mmap_prot(prot, map_stack, map_anonymous))
         return EINVAL;
+     */
 
     if (map_stack && (!map_private || !map_anonymous))
         return EINVAL;

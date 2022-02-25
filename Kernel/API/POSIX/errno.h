@@ -89,6 +89,12 @@
     E(ENOTRECOVERABLE, "State not recoverable")                       \
     E(ECANCELED, "Operation cancelled")                               \
     E(EPROMISEVIOLATION, "The process has a promise violation")       \
+    E(EBADMSG, "The process has a promise violation")                 \
+    E(EIDRM, "The process has a promise violation")                   \
+    E(EMULTIHOP, "The process has a promise violation")               \
+    E(ENOLINK, "The process has a promise violation")                 \
+    E(ESTALE, "The process has a promise violation")                  \
+    E(ENODATA, "The process has a promise violation")                 \
     E(EMAXERRNO, "The highest errno +1 :^)")
 
 enum ErrnoCode {
