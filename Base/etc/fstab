@@ -10,5 +10,6 @@
 /www	/www	bind	bind,nodev,nosuid
 /usr/Tests	/usr/Tests	bind	bind,nodev,ro
 /usr/local	/usr/local	bind	bind,nodev,nosuid
+/usr/dotnet	/usr/dotnet	bind	bind,nodev,nosuid,wxallowed,axallowed
 
 none	/tmp	tmp	nodev,nosuid

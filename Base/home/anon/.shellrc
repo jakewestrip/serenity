@@ -5,3 +5,8 @@
 IFS="\x0a"
 
 export HISTCONTROL="ignoreboth"
+
+#dotnet shit
+export PATH=$PATH:/usr/dotnet/bin
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+export MONO_PATH=/usr/dotnet/lib:/usr/dotnet/lib/net7.0

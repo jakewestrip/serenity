@@ -287,11 +287,13 @@ ErrorOr<bool> validate_program_headers(ElfW(Ehdr) const& elf_header, size_t file
                     dbgln("SHENANIGANS! Program header {} segment leaks beyond end of file!", header_index);
                 return false;
             }
+            /*
             if ((program_header.p_flags & PF_X) && (program_header.p_flags & PF_W)) {
                 if (verbose)
                     dbgln("SHENANIGANS! Program header {} segment is marked write and execute", header_index);
                 return false;
             }
+            */
             break;
         case PT_GNU_STACK:
             if (program_header.p_flags & PF_X) {
